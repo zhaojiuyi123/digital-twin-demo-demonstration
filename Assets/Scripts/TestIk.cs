@@ -15,7 +15,7 @@ public class Move : MonoBehaviour
         // 获取玩家水平轴垂直轴输入
         float v = Input.GetAxis("Vertical");
         float h = Input.GetAxis("Horizontal");
-        Vector3 dir = new Vector3(h, 0, v);
+        Vector3 dir = new Vector3(v, 0, h);
 
         transform.Translate(dir * speed * Time.deltaTime);
     }
